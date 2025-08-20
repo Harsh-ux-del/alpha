@@ -54,13 +54,7 @@ function App() {
       <Router>
         <Header title="MY TODOS LIST" searchbar={false} />
         <Routes>
-            <Route path ="/" render={() => {
-              return (
-                <>
-                  <Addtodo addTodo={addTodo} />
-                  <Todos todos={todos} onDelete={onDelete} />
-                </>)
-            }}>
+            <Route path ="/" element= {<Addtodo addTodo={addTodo}/>}>
             </Route>
             <Route path ="/about" element={<About />} />
           </Routes> 
