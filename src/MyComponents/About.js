@@ -1,10 +1,10 @@
 import React from 'react';
-export default function About()  {
+export default function About()  {  
     return (
         <div>
             This is an about MyComponents
             <p>
-                This about section where you will get the details the owner of this website and will get to know about all the contacts
+                This about section where you will get the details the owner of this website
             </p>
         </div>
     );

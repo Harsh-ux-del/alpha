@@ -1,6 +1,5 @@
 import { Alert } from 'bootstrap';
-import React, { useState } from 'react';
-
+import { useState } from 'react';
 export const Addtodo = ({addTodo}) => {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
@@ -18,7 +17,7 @@ export const Addtodo = ({addTodo}) => {
             <form onSubmit={submit}>
                 <div className="mb-3">
                     <label htmlFor="Title" className="form-label">Todo Title</label>
-                    <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} className="form-control" id="Title" aria-describedby="emailHelp" />
+                    <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} className="form-control" id="Title" aria-describedby="writtenstatement" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="Desc" className="form-label">Todo Description</label>
