@@ -1,7 +1,7 @@
-import { Alert } from 'bootstrap';
-import { useState, useEffect } from 'react'
-import Todos from './Todos';
-export const AddTodo = () => {
+import { Alert } from "bootstrap";
+import { useState, useEffect } from "react"
+import Todos from "./Todos";
+export const Addtodo = () => {
     let initTodo;
     if (localStorage.getItem("todos") === null) {
         initTodo = [];
@@ -35,7 +35,7 @@ export const AddTodo = () => {
             sno: sno,
             title: title,
             desc: desc,
-        }
+        };
         setTodos([...todos, myTodo]);
         console.log(myTodo);
     }
@@ -56,7 +56,7 @@ export const AddTodo = () => {
             <form onSubmit={submit}>
                 <div className="mb-3">
                     <label htmlFor="Title" className="form-label">Todo Title</label>
-                    <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} className="form-control" id="Title" aria-describedby="writtenstatement" />
+                    <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} className="form-control" id="Title" aria-describedby="emailHelp" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="Desc" className="form-label">Todo Description</label>
